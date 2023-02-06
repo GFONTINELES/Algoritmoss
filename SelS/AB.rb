@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 4, ..., 100]
+numbers = [102, 100, 3, 5, 29, 6, 7, 8, 23, 10]
 
 (0...numbers.length - 1).each do |i|
   min_index = i
@@ -9,5 +9,6 @@ numbers = [1, 2, 3, 4, ..., 100]
   end
   numbers[i], numbers[min_index] = numbers[min_index], numbers[i] if i != min_index
 end
-
-puts numbers
+array = [102, 100, 3, 5, 29, 6, 7, 8, 23, 10]
+  puts "Before sort: #{array}"
+  puts "After sort: #{numbers}"
